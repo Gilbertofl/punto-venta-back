@@ -115,14 +115,14 @@ module.exports.SalesController = {
             Response.error(res);
         }
     },
-    getSalesByUser: async (req, res) => {
-        try {
-            const { params: { userId } } = req;
-            let sales = await SalesService.getByUserId(userId);
-            Response.success(res, 200, `Ventas del usuario ${userId}`, sales);
-        } catch (error) {
-            debug(error);
-            Response.error(res);
-        }
-    }
+    // getSalesByUser: async (req, res) => {
+    //     try {
+    //         const { params: { userId } } = req;
+    //         let sales = await SalesService.getByUserId(userId);
+    //         Response.success(res, 200, `Ventas del usuario ${userId}`, sales);
+    //     } catch (error) {
+    //         debug(error);
+    //         Response.error(res);
+    //     }
+    // }
 }

@@ -9,7 +9,7 @@ module.exports.SalesAPI = (app) => {
         .get('/:id', SalesController.getSale)
         .post('/', SalesController.createSale)
         .delete('/:id', SalesController.deleteSale)
-        .get('/user/:userId', SalesController.getSalesByUser);
+        // .get('/user/:userId', SalesController.getSalesByUser);
 
     app.use('/api/sales', router);
 };
